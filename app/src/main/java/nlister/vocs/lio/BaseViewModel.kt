@@ -3,7 +3,7 @@ package nlister.vocs.lio
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModel
 
-class BaseViewModel<View>: ViewModel() {
+abstract class BaseViewModel<View>: ViewModel() {
     private var view: View? = null
 
     /**

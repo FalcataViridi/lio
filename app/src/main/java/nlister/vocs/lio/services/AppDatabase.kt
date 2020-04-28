@@ -6,7 +6,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import nlister.vocs.lio.model.MainListItemData
 
-class AppDatabase {
+class AppDatabase private constructor() {
 
     private val database = FirebaseDatabase.getInstance()
     private val dbRootRef = database.reference

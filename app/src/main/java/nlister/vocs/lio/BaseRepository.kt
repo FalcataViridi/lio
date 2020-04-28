@@ -2,6 +2,6 @@ package nlister.vocs.lio
 
 import nlister.vocs.lio.services.AppDatabase
 
-class BaseRepository {
-    val mAppDatabase = AppDatabase.getInstance()
+abstract class BaseRepository {
+    protected val mAppDatabase = AppDatabase.getInstance()
 }
